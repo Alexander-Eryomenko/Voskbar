@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.promo__slider').slick({
     // accessibility: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     arrows: false,
     // prevArrow: <button type="button" class="slick-prev">Previous</button>,
     // nextArrow: <button type="button" class="slick-next">Next</button>,
