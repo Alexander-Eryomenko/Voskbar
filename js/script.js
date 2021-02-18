@@ -18,3 +18,13 @@ $(document).ready(function(){
 
   });
 });
+$(document).ready(function(){
+  $('.masters__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    fade: true,
+    speed: 2000,
+  });
+});
