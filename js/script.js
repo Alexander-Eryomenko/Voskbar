@@ -4,8 +4,8 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    // prevArrow: <button type="button" class="slick-prev">Previous</button>,
-    // nextArrow: <button type="button" class="slick-next">Next</button>,
+    prevArrow: false,
+    nextArrow: false,
     // centerMode: true,
     // centerPadding: '300px',
     // cssEase: 'ease',
@@ -26,6 +26,8 @@ $(document).ready(function(){
     dots: false,
     fade: true,
     speed: 2000,
+    prevArrow: false,
+    nextArrow: false,
   });
 });
 
