@@ -31,6 +31,8 @@ $(document).ready(function(){
   });
 });
 
+new WOW().init()
+
 const btn = document.querySelector('.hamburger')
 const overlay = document.querySelector('.overlay')
 const menu = document.querySelector('.menu')
