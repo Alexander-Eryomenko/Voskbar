@@ -1,21 +1,15 @@
 $(document).ready(function(){
   $('.promo__slider').slick({
-    // accessibility: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
     prevArrow: false,
     nextArrow: false,
-    // centerMode: true,
-    // centerPadding: '300px',
-    // cssEase: 'ease',
     dots: false,
-    // dotsClass: 'slick-dots',
     fade: true,
-    // focusOnSelect: true,
-    // respondTo: 'slider',
     speed: 2000,
-
   });
 });
 $(document).ready(function(){
