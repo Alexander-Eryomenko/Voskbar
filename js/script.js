@@ -1,29 +1,32 @@
+// Слайдер акции
+
 $(document).ready(function(){
-  $('.promo__slider').slick({
-    pauseOnFocus: false,
-    pauseOnHover: false,
+  $('.promo__slider, .masters__slider').slick({
+    arrows: true,
+    dots: true,
+    speed: 1000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    prevArrow: false,
-    nextArrow: false,
-    dots: false,
-    fade: true,
-    speed: 2000,
+    autoplaySpeed: 3000,
+
+    responsive: [
+      {
+      breakpoint: 770,
+      settings: {
+      }
+    }, 
+    {
+      breakpoint: 576,
+      settings: {
+        arrows: false,
+      }
+    },]
   });
 });
-$(document).ready(function(){
-  $('.masters__slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    dots: false,
-    fade: true,
-    speed: 2000,
-    prevArrow: false,
-    nextArrow: false,
-  });
-});
+
+
+// wow js
 
 new WOW().init()
 
@@ -37,10 +40,6 @@ btn.addEventListener('click', (event) => {
   menu.classList.add('active')
 })
 
-// btnClose.addEventListener('click', (event) => {
-//   overlay.classList.remove('active')
-//   menu.classList.remove('active')
-// })
 
 overlay.addEventListener('click', (event) => {
   overlay.classList.remove('active')
