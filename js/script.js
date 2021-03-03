@@ -12,8 +12,9 @@ $(document).ready(function(){
 
     responsive: [
       {
-      breakpoint: 770,
+      breakpoint: 992,
       settings: {
+        arrows: false,
       }
     }, 
     {
